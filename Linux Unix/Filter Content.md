@@ -118,3 +118,31 @@ htb-student x 1002 1002  /home/htb-student /bin/bash
 ```
 
 The `-d` flag is used to send data, and `-X POST` specifies that it's a POST request.
+
+### Summary of Common `curl` Options:
+
+- `-O` : Download a file and save with the same name.
+    
+- `-o [filename]` : Download and specify a filename.
+    
+- `-I` : Fetch headers only (HEAD request).
+    
+- `-L` : Follow redirects.
+    
+- `-X [method]` : Specify HTTP method (GET, POST, PUT, DELETE).
+    
+- `-d` : Send data with POST request.
+    
+- `-H` : Add a custom header (e.g., Content-Type).
+    
+- `-u [username:password]` : HTTP Basic Authentication.
+    
+- `-v` : Verbose mode (detailed request/response info).
+    
+- `-b` : Use cookies from a file.
+    
+- `-c` : Save cookies to a file.
+    
+- `-T` : Upload a file.
+    
+- `--max-time` : Set a timeout.
