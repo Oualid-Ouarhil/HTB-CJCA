@@ -101,6 +101,8 @@ htb-student x 1002 1002  /home/htb-student /bin/bash
 ```
 
 =='Curl'== is a tool used to grab info about a running url, example =='curl'== www.facebook.com . we can also add other options to it like -o 'filename' to save the output into a file.
+┌─[trifault@parrot]─[~]  
+└──╼ $curl -I https://www.youtube.com -o Youtube.txt
 
 **Show HTTP headers:**
 
