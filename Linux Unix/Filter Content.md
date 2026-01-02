@@ -100,4 +100,4 @@ cry0l1t3 x 1001 1001  /home/cry0l1t3 /bin/bash
 htb-student x 1002 1002  /home/htb-student /bin/bash
 ```
 
-cu
+=='Curl'== i
