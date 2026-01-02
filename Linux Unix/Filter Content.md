@@ -113,6 +113,8 @@ htb-student x 1002 1002  /home/htb-student /bin/bash
 
 **Send data with a POST request (like submitting a form):**
 
+```
 `curl -d "name=John&age=25" -X POST http://example.com/submit`
+```
 
 The `-d` flag is used to send data, and `-X POST` specifies that it's a POST request.
