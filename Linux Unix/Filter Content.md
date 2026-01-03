@@ -146,3 +146,16 @@ The `-d` flag is used to send data, and `-X POST` specifies that it's a POST req
 - `-T` : Upload a file.
     
 - `--max-time` : Set a timeout.
+
+
+Linux controls file/directory access using **read (r), write (w), execute (x)** permissions set for **owner, group, and others**.
+
+- **Directories:** `x` = enter/traverse, `r` = list contents, `w` = create/delete files
+    
+- Permissions use **octal numbers** (e.g., 754) and are changed with **chmod**
+    
+- Ownership is changed with **chown**
+    
+- **SUID/SGID:** programs run with owner/group privileges (security risk if misused)
+    
+- **Sticky bit:** in shared dirs, only file owners/root can delete files (`t` = executable, `T` = not executable)
