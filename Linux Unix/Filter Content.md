@@ -187,4 +187,142 @@ Linux controls file/directory access using **read (r), write (w), execute (x)** 
 
 # Network Services
 
+## SSH
 
+### Install SSH Server
+
+`sudo apt install openssh-server -y`
+
+**Use:** Installs the SSH service so others can connect to your system
+
+### Check SSH Status
+
+`systemctl status ssh`
+
+**Use:** Verifies if SSH is running
+
+### Connect to a Remote Host
+
+`ssh username@IP_address`
+
+**Use:** Securely log into another Linux machine
+
+### SSH Configuration File
+
+`/etc/ssh/sshd_config`
+
+**Use:** Configure SSH options (ports, authentication, access rules)
+
+---
+
+## NFS
+
+### Install NFS Server
+
+`sudo apt install nfs-kernel-server -y`
+
+**Use:** Enables file sharing over a network
+
+### Check NFS Status
+
+`systemctl status nfs-kernel-server`
+
+**Use:** Confirms NFS service is active
+
+### NFS Configuration File
+
+`/etc/exports`
+
+**Use:** Defines which directories are shared and permissions
+
+### Example NFS Share
+
+`/home/user/share hostname(rw,sync,no_root_squash)`
+
+**Use:** Shares a folder with read/write access
+
+### Mount an NFS Share
+
+`mount IP:/shared/folder /local/mountpoint`
+
+**Use:** Access a remote shared folder locally
+
+---
+
+## Web Servers
+
+### Install Apache
+
+`sudo apt install apache2 -y`
+
+**Use:** Installs Apache web server
+
+### Apache Main Directory
+
+`/var/www/html`
+
+**Use:** Default folder for hosting web files
+
+### Apache Configuration File
+
+`/etc/apache2/apache2.conf`
+
+**Use:** Controls server behavior and permissions
+
+### Install Python
+
+`sudo apt install python3 -y`
+
+**Use:** Required for Python web server
+
+### Start Python Web Server
+
+`python3 -m http.server`
+
+**Use:** Hosts current directory on port 8000
+
+### Host Specific Directory
+
+`python3 -m http.server --directory /path/to/folder`
+
+**Use:** Share a specific folder
+
+### Use Custom Port
+
+`python3 -m http.server 443`
+
+**Use:** Run server on a different port
+
+---
+
+## VPN (OpenVPN)
+
+### Install OpenVPN
+
+`sudo apt install openvpn -y`
+
+**Use:** Installs VPN client/server
+
+### OpenVPN Configuration File
+
+`/etc/openvpn/server.conf`
+
+**Use:** Controls encryption, tunneling, routing
+
+### Connect to VPN
+
+`sudo openvpn --config file.ovpn`
+
+**Use:** Connects to a secure internal network
+
+---
+
+## Quick Security Summary (Important!)
+
+- ❌ FTP → **Insecure**
+    
+- ✅ SSH / VPN → **Encrypted & Secure**
+    
+- ⚠️ NFS with `no_root_squash` → **High risk**
+    
+- ⚠️ Web servers → **Common attack targets**
