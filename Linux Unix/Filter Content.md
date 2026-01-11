@@ -333,3 +333,6 @@ Linux controls file/directory access using **read (r), write (w), execute (x)** 
 You can start a http server on linux on a specific port using this command 
 `http-server -p 8080`  make sure u have it installed first by using:
 `sudo npm install --global http-server` 
+
+For PHP this is how you start it
+`php -S 127.0.0.1:8080`
