@@ -328,4 +328,6 @@ Linux controls file/directory access using **read (r), write (w), execute (x)** 
 - ⚠️ Web servers → **Common attack targets**
 
 
-HTTP-SERVER
+# //HTTP-SERVER//
+
+You can start a http server on linux on a specific port using this command 
