@@ -331,4 +331,5 @@ Linux controls file/directory access using **read (r), write (w), execute (x)** 
 # //HTTP-SERVER//
 
 You can start a http server on linux on a specific port using this command 
-`http-server -p 8080`  make sure u h
+`http-server -p 8080`  make sure u have it installed first by using:
+`sudo npm install --global http-server` 
