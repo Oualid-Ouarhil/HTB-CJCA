@@ -326,3 +326,6 @@ Linux controls file/directory access using **read (r), write (w), execute (x)** 
 - ⚠️ NFS with `no_root_squash` → **High risk**
     
 - ⚠️ Web servers → **Common attack targets**
+
+
+HTTP-SERVER
